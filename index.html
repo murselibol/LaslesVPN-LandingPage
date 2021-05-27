@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LaslesVPN</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <svg style="position: absolute; width: 0; height: 0; overflow: hidden" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <defs>
+        <symbol id="icon-switch" viewBox="0 0 26 26">
+          <title>icon-switch</title>
+          <path d="M 0 4 L 0 6 L 26 6 L 26 4 Z M 0 12 L 0 14 L 26 14 L 26 12 Z M 0 20 L 0 22 L 26 22 L 26 20 Z" />
+        </symbol>
+        <symbol id="icon-users" viewBox="0 0 56 56">
+          <rect class="icon-56-rect" x="0.5" y="0.0493164" width="55" height="55" rx="27.5" />
+          <title>icon-users</title>
+          <path
+            d="M27.5 26.3493C28.4548 26.3493 29.3705 25.97 30.0456 25.2949C30.7207 24.6197 31.1 23.7041 31.1 22.7493C31.1 21.7945 30.7207 20.8788 30.0456 20.2037C29.3705 19.5286 28.4548 19.1493 27.5 19.1493C26.5452 19.1493 25.6296 19.5286 24.9544 20.2037C24.2793 20.8788 23.9 21.7945 23.9 22.7493C23.9 23.7041 24.2793 24.6197 24.9544 25.2949C25.6296 25.97 26.5452 26.3493 27.5 26.3493ZM22.3987 37.1493C20.5769 37.1493 19.0422 35.6179 19.7394 33.9347C20.1616 32.9156 20.7803 31.9896 21.5603 31.2096C22.3403 30.4296 23.2663 29.8108 24.2855 29.3887C25.3046 28.9666 26.3969 28.7493 27.5 28.7493C28.6031 28.7493 29.6954 28.9666 30.7145 29.3887C31.7337 29.8108 32.6597 30.4296 33.4397 31.2096C34.2197 31.9896 34.8385 32.9156 35.2606 33.9347C35.9578 35.6179 34.4232 37.1493 32.6014 37.1493H22.3987Z"
+          />
+        </symbol>
+        <symbol id="icon-locations" viewBox="0 0 56 56">
+          <rect class="icon-56-rect" x="0.5" y="0.0493164" width="55" height="55" rx="27.5" />
+          <title>icon-locations</title>
+          <path
+            d="M35 24.5493C35 23.6301 34.8189 22.7198 34.4672 21.8705C34.1154 21.0213 33.5998 20.2496 32.9497 19.5996C32.2997 18.9496 31.5281 18.4339 30.6788 18.0822C29.8295 17.7304 28.9193 17.5493 28 17.5493C27.0807 17.5493 26.1705 17.7304 25.3212 18.0822C24.4719 18.4339 23.7003 18.9496 23.0503 19.5996C22.4002 20.2496 21.8846 21.0213 21.5328 21.8705C21.1811 22.7198 21 23.6301 21 24.5493C21 25.9363 21.41 27.2263 22.105 28.3143H22.097C24.457 32.0093 28 37.5493 28 37.5493L33.903 28.3143H33.896C34.6164 27.1907 34.9995 25.8841 35 24.5493ZM28 27.5493C27.2044 27.5493 26.4413 27.2332 25.8787 26.6706C25.3161 26.108 25 25.345 25 24.5493C25 23.7537 25.3161 22.9906 25.8787 22.428C26.4413 21.8654 27.2044 21.5493 28 21.5493C28.7956 21.5493 29.5587 21.8654 30.1213 22.428C30.6839 22.9906 31 23.7537 31 24.5493C31 25.345 30.6839 26.108 30.1213 26.6706C29.5587 27.2332 28.7956 27.5493 28 27.5493Z"
+          />
+        </symbol>
+        <symbol id="icon-servers" viewBox="0 0 56 56">
+          <rect class="icon-56-rect" x="0.5" y="0.0493164" width="55" height="55" rx="27.5" />
+          <title>icon-servers</title>
+          <path
+            d="M35.5 18.5493H19.5C18.9696 18.5493 18.4609 18.76 18.0858 19.1351C17.7107 19.5102 17.5 20.0189 17.5 20.5493V24.5493C17.5 25.0797 17.7107 25.5885 18.0858 25.9635C18.4609 26.3386 18.9696 26.5493 19.5 26.5493H35.5C36.0304 26.5493 36.5391 26.3386 36.9142 25.9635C37.2893 25.5885 37.5 25.0797 37.5 24.5493V20.5493C37.5 20.0189 37.2893 19.5102 36.9142 19.1351C36.5391 18.76 36.0304 18.5493 35.5 18.5493ZM30.5 22.5493C30.5 23.1016 30.0523 23.5493 29.5 23.5493C28.9477 23.5493 28.5 23.1016 28.5 22.5493C28.5 21.997 28.9477 21.5493 29.5 21.5493C30.0523 21.5493 30.5 21.997 30.5 22.5493ZM34.5 22.5493C34.5 23.1016 34.0523 23.5493 33.5 23.5493C32.9477 23.5493 32.5 23.1016 32.5 22.5493C32.5 21.997 32.9477 21.5493 33.5 21.5493C34.0523 21.5493 34.5 21.997 34.5 22.5493ZM35.5 28.5493H19.5C18.9696 28.5493 18.4609 28.76 18.0858 29.1351C17.7107 29.5102 17.5 30.0189 17.5 30.5493V34.5493C17.5 35.0798 17.7107 35.5885 18.0858 35.9635C18.4609 36.3386 18.9696 36.5493 19.5 36.5493H35.5C36.0304 36.5493 36.5391 36.3386 36.9142 35.9635C37.2893 35.5885 37.5 35.0798 37.5 34.5493V30.5493C37.5 30.0189 37.2893 29.5102 36.9142 29.1351C36.5391 28.76 36.0304 28.5493 35.5 28.5493ZM30.5 32.5493C30.5 33.1016 30.0523 33.5493 29.5 33.5493C28.9477 33.5493 28.5 33.1016 28.5 32.5493C28.5 31.997 28.9477 31.5493 29.5 31.5493C30.0523 31.5493 30.5 31.997 30.5 32.5493ZM34.5 32.5493C34.5 33.1016 34.0523 33.5493 33.5 33.5493C32.9477 33.5493 32.5 33.1016 32.5 32.5493C32.5 31.997 32.9477 31.5493 33.5 31.5493C34.0523 31.5493 34.5 31.997 34.5 32.5493Z"
+          />
+        </symbol>
+        <symbol id="icon-checked-bg" viewBox="0 0 25 25">
+          <path
+            d="M12.1215 2.54932C6.60746 2.54932 2.12146 7.03532 2.12146 12.5493C2.12146 18.0633 6.60746 22.5493 12.1215 22.5493C17.6355 22.5493 22.1215 18.0633 22.1215 12.5493C22.1215 7.03532 17.6355 2.54932 12.1215 2.54932ZM10.1225 16.9623L7.11691 13.9632C6.72616 13.5733 6.72537 12.9405 7.11515 12.5496C7.50517 12.1585 8.13847 12.1578 8.52939 12.548L10.1205 14.1363L14.7075 9.54932C15.0979 9.15885 15.731 9.15885 16.1215 9.54932C16.5119 9.93978 16.5119 10.5729 16.1215 10.9633L10.1225 16.9623Z"
+          />
+        </symbol>
+        <symbol id="icon-checked" viewBox="0 0 25 25">
+          <path
+            d="M11.2158 17.2796C11.0845 17.2798 10.9545 17.2542 10.8332 17.2041C10.7119 17.154 10.6016 17.0804 10.5088 16.9876L6.2668 12.7446C6.17123 12.6524 6.09497 12.5421 6.04248 12.4201C5.98998 12.2982 5.9623 12.167 5.96106 12.0342C5.95981 11.9014 5.98502 11.7697 6.03521 11.6468C6.08541 11.5238 6.15958 11.4121 6.25341 11.3182C6.34723 11.2242 6.45883 11.1499 6.58169 11.0995C6.70455 11.0492 6.83621 11.0238 6.96899 11.0248C7.10177 11.0259 7.23301 11.0534 7.35505 11.1057C7.47709 11.158 7.58749 11.2341 7.6798 11.3296L11.2148 14.8646L17.5798 8.50156C17.7673 8.31392 18.0217 8.20845 18.2869 8.20836C18.5522 8.20827 18.8067 8.31355 18.9943 8.50106C19.1819 8.68857 19.2874 8.94294 19.2875 9.20821C19.2876 9.47348 19.1823 9.72792 18.9948 9.91556L11.9228 16.9876C11.83 17.0804 11.7197 17.154 11.5984 17.2041C11.4771 17.2542 11.3471 17.2798 11.2158 17.2796Z"
+            fill="#2FAB73"
+          />
+        </symbol>
+        <symbol id="icon-facebook" viewBox="0 0 32 32">
+          <path d="M19 6h5v-6h-5c-3.86 0-7 3.14-7 7v3h-4v6h4v16h6v-16h5l1-6h-6v-3c0-0.542 0.458-1 1-1z"></path>
+        </symbol>
+        <symbol id="icon-twitter" viewBox="0 0 32 32">
+          <path
+            d="M32 7.075c-1.175 0.525-2.444 0.875-3.769 1.031 1.356-0.813 2.394-2.1 2.887-3.631-1.269 0.75-2.675 1.3-4.169 1.594-1.2-1.275-2.906-2.069-4.794-2.069-3.625 0-6.563 2.938-6.563 6.563 0 0.512 0.056 1.012 0.169 1.494-5.456-0.275-10.294-2.888-13.531-6.862-0.563 0.969-0.887 2.1-0.887 3.3 0 2.275 1.156 4.287 2.919 5.463-1.075-0.031-2.087-0.331-2.975-0.819 0 0.025 0 0.056 0 0.081 0 3.181 2.263 5.838 5.269 6.437-0.55 0.15-1.131 0.231-1.731 0.231-0.425 0-0.831-0.044-1.237-0.119 0.838 2.606 3.263 4.506 6.131 4.563-2.25 1.762-5.075 2.813-8.156 2.813-0.531 0-1.050-0.031-1.569-0.094 2.913 1.869 6.362 2.95 10.069 2.95 12.075 0 18.681-10.006 18.681-18.681 0-0.287-0.006-0.569-0.019-0.85 1.281-0.919 2.394-2.075 3.275-3.394z"
+          ></path>
+        </symbol>
+        <symbol id="icon-instagram" viewBox="0 0 32 32">
+          <path
+            d="M16 2.881c4.275 0 4.781 0.019 6.462 0.094 1.563 0.069 2.406 0.331 2.969 0.55 0.744 0.288 1.281 0.638 1.837 1.194 0.563 0.563 0.906 1.094 1.2 1.838 0.219 0.563 0.481 1.412 0.55 2.969 0.075 1.688 0.094 2.194 0.094 6.463s-0.019 4.781-0.094 6.463c-0.069 1.563-0.331 2.406-0.55 2.969-0.288 0.744-0.637 1.281-1.194 1.837-0.563 0.563-1.094 0.906-1.837 1.2-0.563 0.219-1.413 0.481-2.969 0.55-1.688 0.075-2.194 0.094-6.463 0.094s-4.781-0.019-6.463-0.094c-1.563-0.069-2.406-0.331-2.969-0.55-0.744-0.288-1.281-0.637-1.838-1.194-0.563-0.563-0.906-1.094-1.2-1.837-0.219-0.563-0.481-1.413-0.55-2.969-0.075-1.688-0.094-2.194-0.094-6.463s0.019-4.781 0.094-6.463c0.069-1.563 0.331-2.406 0.55-2.969 0.288-0.744 0.638-1.281 1.194-1.838 0.563-0.563 1.094-0.906 1.838-1.2 0.563-0.219 1.412-0.481 2.969-0.55 1.681-0.075 2.188-0.094 6.463-0.094zM16 0c-4.344 0-4.887 0.019-6.594 0.094-1.7 0.075-2.869 0.35-3.881 0.744-1.056 0.412-1.95 0.956-2.837 1.85-0.894 0.888-1.438 1.781-1.85 2.831-0.394 1.019-0.669 2.181-0.744 3.881-0.075 1.713-0.094 2.256-0.094 6.6s0.019 4.887 0.094 6.594c0.075 1.7 0.35 2.869 0.744 3.881 0.413 1.056 0.956 1.95 1.85 2.837 0.887 0.887 1.781 1.438 2.831 1.844 1.019 0.394 2.181 0.669 3.881 0.744 1.706 0.075 2.25 0.094 6.594 0.094s4.888-0.019 6.594-0.094c1.7-0.075 2.869-0.35 3.881-0.744 1.050-0.406 1.944-0.956 2.831-1.844s1.438-1.781 1.844-2.831c0.394-1.019 0.669-2.181 0.744-3.881 0.075-1.706 0.094-2.25 0.094-6.594s-0.019-4.887-0.094-6.594c-0.075-1.7-0.35-2.869-0.744-3.881-0.394-1.063-0.938-1.956-1.831-2.844-0.887-0.887-1.781-1.438-2.831-1.844-1.019-0.394-2.181-0.669-3.881-0.744-1.712-0.081-2.256-0.1-6.6-0.1v0z"
+          ></path>
+          <path d="M16 7.781c-4.537 0-8.219 3.681-8.219 8.219s3.681 8.219 8.219 8.219 8.219-3.681 8.219-8.219c0-4.537-3.681-8.219-8.219-8.219zM16 21.331c-2.944 0-5.331-2.387-5.331-5.331s2.387-5.331 5.331-5.331c2.944 0 5.331 2.387 5.331 5.331s-2.387 5.331-5.331 5.331z"></path>
+
+          <path d="M26.462 7.456c0 1.060-0.859 1.919-1.919 1.919s-1.919-0.859-1.919-1.919c0-1.060 0.859-1.919 1.919-1.919s1.919 0.859 1.919 1.919z"></path>
+        </symbol>
+      </defs>
+    </svg>
+
+    <header class="Header">
+      <div class="container">
+        <div class="Header-wrapper">
+          <div class="Header-logo">
+            <button class="Header-logo-button">
+              <img src="img/logo.svg" alt="logo-LaslesVPN" />
+              <span class="Header-logo-button-lasles">Lasles<span class="Header-logo-button-vpn">VPN</span></span>
+            </button>
+            <button class="Header-switch" type="button">
+              <svg class="icon"><use xlink:href="#icon-switch"></use></svg>
+            </button>
+          </div>
+
+          <div class="Header-menu">
+            <nav class="Navigation">
+              <ul class="Navigation-list">
+                <li class="Navigation-list-item"><a href="#" class="Navigation-list-item-link">About</a></li>
+                <li class="Navigation-list-item"><a href="#" class="Navigation-list-item-link">Features</a></li>
+                <li class="Navigation-list-item"><a href="#" class="Navigation-list-item-link">Pricing</a></li>
+                <li class="Navigation-list-item"><a href="#" class="Navigation-list-item-link">Testimonials</a></li>
+                <li class="Navigation-list-item"><a href="#" class="Navigation-list-item-link">Help</a></li>
+              </ul>
+            </nav>
+            <div class="Header-menu-login">
+              <a class="Header-menu-login-signIn">Sign In</a>
+              <div class="Header-menu-login-signUp">
+                <button class="br-50 br-50-pink" type="button">Sign Up</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="Main">
+      <section class="hero">
+        <div class="container">
+          <div class="hero-wrapper">
+            <div class="hero-content">
+              <h1 class="hero-content-title">Want anything to be easy with <span class="hero-content-title-700">LaslesVPN.</span></h1>
+              <p class="hero-content-explanation">Provide a network for all your needs with ease and fun using <span class="hero-content-explanation-500">LaslesVPN</span> discover interesting features from us.</p>
+              <button class="hero-content-button-started br-10">Get Started</button>
+            </div>
+            <figure class="hero-photo">
+              <picture>
+                <img src="img/sec1-.svg" alt="" />
+              </picture>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="our-statistics">
+        <div class="container">
+          <div class="our-statistics-wrapper">
+            <div class="our-statistics-item">
+              <svg class="our-statistics-item-icon icon-56"><use xlink:href="#icon-users"></use></svg>
+              <span class="our-statistics-item-title"
+                >90+
+                <span class="our-statistics-item-description">Users</span>
+              </span>
+            </div>
+            <div class="our-statistics-item">
+              <svg class="our-statistics-item-icon icon-56"><use xlink:href="#icon-locations"></use></svg>
+              <span class="our-statistics-item-title"
+                >30+
+                <span class="our-statistics-item-description">Locations</span>
+              </span>
+            </div>
+            <div class="our-statistics-item">
+              <svg class="our-statistics-item-icon icon-56"><use xlink:href="#icon-servers"></use></svg>
+              <span class="our-statistics-item-title"
+                >50+
+                <span class="our-statistics-item-description">Servers</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="container">
+          <div class="features-wrapper">
+            <figure class="features-photo">
+              <picture>
+                <img src="img/sec2-we-provide.svg" alt="" />
+              </picture>
+            </figure>
+            <div class="features-content">
+              <h3 class="features-content-title">We Provide Many Features You Can Use</h3>
+              <p class="features-content-explanation">You can explore the features that we provide with fun and have their own functions each feature.</p>
+              <div class="features-content-container">
+                <div class="features-content-item">
+                  <svg class="icon icon-checked-bg"><use xlink:href="#icon-checked-bg"></use></svg>
+                  <span class="features-content-item-text">Powerfull online protection.</span>
+                </div>
+                <div class="features-content-item">
+                  <svg class="icon icon-checked-bg"><use xlink:href="#icon-checked-bg"></use></svg>
+                  <span class="features-content-item-text">Internet without borders.</span>
+                </div>
+                <div class="features-content-item">
+                  <svg class="icon icon-checked-bg"><use xlink:href="#icon-checked-bg"></use></svg>
+                  <span class="features-content-item-text">Supercharged VPN</span>
+                </div>
+                <div class="features-content-item">
+                  <svg class="icon icon-checked-bg"><use xlink:href="#icon-checked-bg"></use></svg>
+                  <span class="features-content-item-text">No specific time limits.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="choose">
+        <div class="container">
+          <div class="choose-wrapper">
+            <div class="choose-text">
+              <h3 class="choose-text-title">Choose Your Plan</h3>
+              <span class="choose-text-explanation">Let's choose the package that is best for you and explore it happily and cheerfully.</span>
+            </div>
+            <div class="choose-cards-container">
+              <div class="choose-card">
+                <img class="choose-card-photo" src="img/sec3.1-free-plan.svg" alt="" />
+                <div class="choose-card-title">Free Plan</div>
+                <div class="choose-card-properties">
+                  <div class="choose-card-properties-body">
+                    <svg class="icon icon-checked"><use xlink:href="#icon-checked"></use></svg>
+                    <span class="choose-card-properties-body-text">Unlimited Bandwitch</span>
+                  </div>
+                  <div class="choose-card-properties-body">
+                    <svg class="icon icon-checked"><use xlink:href="#icon-checked"></use></svg>
+                    <span class="choose-card-properties-body-text">Encrypted Connection</span>
+                  </div>
+                  <div class="choose-card-properties-body">
+                    <svg class="icon icon-checked"><use xlink:href="#icon-checked"></use></svg>
+                    <span class="choose-card-properties-body-text">No Traffic Logs</span>
+                  </div>
+                  <div class="choose-card-properties-body">
+                    <svg class="icon icon-checked"><use xlink:href="#icon-checked"></use></svg>
+                    <span class="choose-card-properties-body-text">Works on All Devices</span>
+                  </div>
+                </div>
+                <div class="choose-card-bottom">
+                  <span class="choose-card-text">Free</span>
+                  <button class="br-50 br-50-orange" type="button">Select</button>
+                </div>
+              </div>
+              <div class="choose-card">
+                <img class="choose-card-photo" src="img/sec3.2-standart-plan.svg" alt="" />
+                <div class="choose-card-title">Standart Plan</div>
+                <div class="choose-card-properties">
+                  <div class="choose-card-properties-body">
+                    <svg class="icon icon-checked"><use xlink:href="#icon-checked"></use></svg>
+                    <span class="choose-card-properties-body-text">Unlimited Bandwitch</span>
+                  </div>
+                  <div class="choose-card-properties-body">
+                    <svg class="icon icon-checked"><use xlink:href="#icon-checked"></use></svg>
+                    <span class="choose-card-properties-body-text">Encrypted Connection</span>
+                  </div>
+                  <div class="choose-card-properties-body">
+                    <svg class="icon icon-checked"><use xlink:href="#icon-checked"></use></svg>
+                    <span class="choose-card-properties-body-text">Yes Traffic Logs</span>
+                  </div>
+                  <div class="choose-card-properties-body">
+                    <svg class="icon icon-checked"><use xlink:href="#icon-checked"></use></svg>
+                    <span class="choose-card-properties-body-text">Works on All Devices</span>
+                  </div>
+                  <div class="choose-card-properties-body">
+                    <svg class="icon icon-checked"><use xlink:href="#icon-checked"></use></svg>
+                    <span class="choose-card-properties-body-text">Connect Anyware</span>
+                  </div>
+                </div>
+                <div class="choose-card-bottom">
+                  <span class="choose-card-text">$9 <span class="choose-card-text-month">/ mo</span></span>
+                  <button class="br-50 br-50-orange" type="button">Select</button>
+                </div>
+              </div>
+              <div class="choose-card">
+                <img class="choose-card-photo" src="img/sec3.3-premium-plan.svg" alt="" />
+                <div class="choose-card-title">Premium Plan</div>
+                <div class="choose-card-properties">
+                  <div class="choose-card-properties-body">
+                    <svg class="icon icon-checked"><use xlink:href="#icon-checked"></use></svg>
+                    <span class="choose-card-properties-body-text">Unlimited Bandwitch</span>
+                  </div>
+                  <div class="choose-card-properties-body">
+                    <svg class="icon icon-checked"><use xlink:href="#icon-checked"></use></svg>
+                    <span class="choose-card-properties-body-text">Encrypted Connection</span>
+                  </div>
+                  <div class="choose-card-properties-body">
+                    <svg class="icon icon-checked"><use xlink:href="#icon-checked"></use></svg>
+                    <span class="choose-card-properties-body-text">Yes Traffic Logs</span>
+                  </div>
+                  <div class="choose-card-properties-body">
+                    <svg class="icon icon-checked"><use xlink:href="#icon-checked"></use></svg>
+                    <span class="choose-card-properties-body-text">Works on All Devices</span>
+                  </div>
+                  <div class="choose-card-properties-body">
+                    <svg class="icon icon-checked"><use xlink:href="#icon-checked"></use></svg>
+                    <span class="choose-card-properties-body-text">Connect Anyware</span>
+                  </div>
+                  <div class="choose-card-properties-body">
+                    <svg class="icon icon-checked"><use xlink:href="#icon-checked"></use></svg>
+                    <span class="choose-card-properties-body-text">Get New Features</span>
+                  </div>
+                </div>
+                <div class="choose-card-bottom">
+                  <span class="choose-card-text">$12 <span class="choose-card-text-month">/ mo</span></span>
+                  <button class="br-50 br-50-orange" type="button">Select</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="Footer">
+      <div class="container">
+        <div class="Footer-wrapper">
+          <div class="Footer-social">
+            <div class="Footer-social-logo">
+              <button class="Footer-social-logo-button">
+                <img src="img/logo.svg" alt="logo-LaslesVPN" />
+                <span class="Footer-social-logo-button-lasles">Lasles<span class="Footer-social-logo-button-vpn">VPN</span></span>
+              </button>
+            </div>
+            <span class="Footer-social-explanation">LaslesVPN is a private virtual network that has unique features and has high security.</span>
+            <div class="Footer-social-icons">
+              <svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg>
+              <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
+              <svg class="icon icon-instagram"><use xlink:href="#icon-instagram"></use></svg>
+            </div>
+            <span class="Footer-social-copyright">©2020 LaslesVPN</span>
+          </div>
+          <div class="Footer-display">
+            <div class="Footer-product-list">
+              <div class="Footer-product-list-title">Product</div>
+              <a class="Footer-product-list-item" href="">Download</a>
+              <a class="Footer-product-list-item" href="">Pricing</a>
+              <a class="Footer-product-list-item" href="">Locations</a>
+              <a class="Footer-product-list-item" href="">Server</a>
+              <a class="Footer-product-list-item" href="">Countries</a>
+              <a class="Footer-product-list-item" href="">Blog</a>
+            </div>
+            <div class="Footer-engage">
+              <div class="Footer-engage-list">
+                <div class="Footer-engage-list-title">Engage</div>
+                <a class="Footer-engage-list-item" href="">LaslesVPN?</a>
+                <a class="Footer-engage-list-item" href="">FAQ</a>
+                <a class="Footer-engage-list-item" href="">Tutorials</a>
+                <a class="Footer-engage-list-item" href="">About Us</a>
+                <a class="Footer-engage-list-item" href="">Privacy Policy</a>
+                <a class="Footer-engage-list-item" href="">Terms of Service</a>
+              </div>
+            </div>
+            <div class="Footer-earnmoney">
+              <div class="Footer-earnmoney-list">
+                <div class="Footer-earnmoney-list-title">Earn Money</div>
+                <a class="Footer-earnmoney-list-item" href="">Affiliate</a>
+                <a class="Footer-earnmoney-list-item" href="">Become Partner</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

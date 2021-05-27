@@ -1,0 +1,11 @@
+@import './config/variables';
+@import './config/mixin';
+//
+@import './helper/normalize';
+@import './helper/formalize';
+@import './helper/global';
+//
+@import './shared/header';
+@import './shared/footer';
+//
+@import './pages/index';

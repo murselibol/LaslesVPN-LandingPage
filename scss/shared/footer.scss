@@ -1,0 +1,112 @@
+.Footer {
+  background-color: #f9f9f9;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+
+  &-wrapper {
+    margin-left: $margin-width;
+    margin-right: $margin-width;
+    padding-top: 40px;
+    padding-bottom: 30px;
+
+    @include mq('desktop') {
+      // margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    @include mq('desktop') {
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    &-logo {
+      display: flex;
+      margin-bottom: 20px;
+      @include mq('desktop') {
+        width: 100%;
+      }
+
+      &-button {
+        background-color: inherit;
+        font-size: 20px;
+        color: $color-title;
+        cursor: pointer;
+        &-lasles {
+          display: inline-block;
+          font-weight: 500;
+        }
+        &-vpn {
+          font-weight: 700;
+        }
+      }
+    }
+
+    &-explanation {
+      color: $color-text-main;
+      margin-bottom: 20px;
+      line-height: 20px;
+
+      @include mq('desktop') {
+        line-height: 30px;
+        max-width: 340px;
+      }
+    }
+
+    &-icons {
+      margin-bottom: 20px;
+
+      svg {
+        cursor: pointer;
+      }
+
+      svg + svg {
+        margin-left: 15px;
+      }
+    }
+
+    &-copyright {
+      color: $color-text-main;
+    }
+  }
+
+  &-display {
+    display: none;
+
+    @include mq('desktop') {
+      display: flex;
+    }
+  }
+
+  &-product,
+  &-engage,
+  &-earnmoney {
+    margin-left: 126px;
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      &-title {
+        font-size: 1.12em;
+        font-weight: 500;
+        color: $color-title;
+        margin-bottom: 30px;
+      }
+      &-item {
+        height: $finger-size;
+        color: $color-text-main;
+
+        &:hover {
+          color: $color-title;
+        }
+      }
+    }
+  }
+}

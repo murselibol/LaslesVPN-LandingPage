@@ -1,0 +1,375 @@
+.hero {
+  &-wrapper {
+    position: relative;
+    margin-right: $margin-width;
+    margin-left: $margin-width;
+    margin-bottom: 50px;
+
+    @include mq('desktop') {
+      margin-bottom: 40px;
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+
+  &-content {
+    @include mq('desktop') {
+      width: 50%;
+    }
+
+    &-title {
+      color: $color-title;
+      line-height: 50px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 33px;
+      font-weight: 500;
+
+      @include mq('desktop') {
+        line-height: 70px;
+        font-size: 50px;
+        margin-top: 90px;
+      }
+
+      &-700 {
+        font-weight: 700;
+      }
+    }
+    &-explanation {
+      color: $color-text-main;
+      line-height: 30px;
+      margin-bottom: 40px;
+      &-500 {
+        font-weight: 500;
+      }
+    }
+    &-button-started {
+      width: 100%;
+      @include mq('desktop') {
+        width: 250px;
+      }
+    }
+  }
+
+  &-photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    @include mq('desktop') {
+      position: relative;
+      z-index: 0;
+      width: 50%;
+      margin-left: 40px;
+    }
+
+    img {
+      width: 100%;
+      object-fit: contain;
+      margin-left: auto;
+      margin-right: auto;
+      opacity: 0.2;
+      @include mq('desktop') {
+        object-fit: none;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+/************        OUR-STATİSTİCS       *************/
+
+.our-statistics {
+  &-wrapper {
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    margin-left: $margin-width;
+    margin-right: $margin-width;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    box-shadow: 0px 8px 30px 1px rgba(0, 0, 255, 0.1);
+
+    @include mq('desktop') {
+      margin-top: 135px;
+      justify-content: space-evenly;
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+  }
+
+  &-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 16px;
+    margin-right: 16px;
+
+    @include mq('desktop') {
+      flex-direction: row;
+      align-items: center;
+    }
+
+    &-icon {
+      margin-bottom: 15px;
+      @include mq('desktop') {
+        margin-bottom: 0;
+      }
+    }
+    &-title {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      color: $color-title;
+      font-size: 20px;
+      font-weight: 700;
+
+      @include mq('desktop') {
+        margin-left: 32px;
+        font-size: 25px;
+      }
+    }
+    &-description {
+      color: $color-text-main;
+      font-size: 16px;
+      font-weight: 400;
+
+      @include mq('desktop') {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+/************        FEATURES       *************/
+
+.features {
+  margin-bottom: 80px;
+  &-wrapper {
+    position: relative;
+    margin-left: $margin-width;
+    margin-right: $margin-width;
+
+    @include mq('desktop') {
+      display: flex;
+      justify-self: flex-end;
+    }
+  }
+  &-photo {
+    position: absolute;
+    top: -20px;
+    z-index: -1;
+
+    @include mq('desktop') {
+      position: relative;
+      top: 0;
+      z-index: 0;
+      width: 50%;
+    }
+
+    img {
+      width: 100%;
+      opacity: 0.2;
+      @include mq('desktop') {
+        opacity: 1;
+      }
+    }
+  }
+
+  &-content {
+    font-size: $font-size;
+    color: $color-text-main;
+    font-weight: 400;
+    line-height: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    @include mq('desktop') {
+      align-items: flex-start;
+      text-align: left;
+      line-height: 30px;
+      margin-left: 100px;
+      margin-right: $margin-width;
+      width: 50%;
+      margin-top: 25px;
+    }
+
+    &-title {
+      font-size: 25px;
+      font-weight: 500;
+      line-height: 35px;
+      color: $color-title;
+      margin-bottom: 15px;
+
+      @include mq('desktop') {
+        font-size: 2.2em;
+        font-weight: 500;
+        line-height: 50px;
+        margin-bottom: 20px;
+      }
+    }
+
+    &-explanation {
+      font-size: 1em;
+      margin-bottom: 15px;
+    }
+    &-item {
+      display: flex;
+      align-items: center;
+
+      & + & {
+        margin-top: 10px;
+      }
+
+      &-text {
+        margin-left: 10px;
+        font-size: 0.87em;
+      }
+    }
+  }
+}
+
+/************        CHOOSE       *************/
+.choose {
+  &-wrapper {
+    margin-bottom: 30px;
+    margin-left: $margin-width;
+    margin-right: $margin-width;
+
+    @include mq('desktop') {
+      margin-bottom: 50px;
+    }
+  }
+
+  &-text {
+    text-align: center;
+    margin-bottom: 40px;
+
+    @include mq('desktop') {
+      margin-bottom: 60px;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 555px;
+    }
+
+    &-title {
+      font-size: 1.56em;
+      font-weight: 500;
+      line-height: 35px;
+      color: $color-title;
+      margin-bottom: 15px;
+
+      @include mq('desktop') {
+        font-size: 2.1em;
+        line-height: 50px;
+        margin-bottom: 20px;
+      }
+    }
+    &-explanation {
+      font-size: $font-size;
+      color: $color-text-main;
+      font-weight: 400;
+      line-height: 25px;
+
+      @include mq('desktop') {
+        line-height: 30px;
+      }
+    }
+  }
+
+  &-cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include mq('desktop') {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &-card {
+    width: 330px;
+    border: 2px solid rgba(221, 221, 221, 1);
+    border-radius: 10px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+
+    @include mq('desktop') {
+      padding-top: 60px;
+      padding-bottom: 50px;
+      margin-top: 0;
+      height: 700px;
+    }
+
+    &-photo {
+      margin-bottom: 20px;
+
+      @include mq('desktop') {
+        margin-bottom: 30px;
+      }
+
+      img {
+        width: 50%;
+        height: 50%;
+
+        @include mq('desktop') {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    &-title {
+      font-size: 1.25em;
+      color: $color-title;
+      font-weight: 500;
+      margin-bottom: 30px;
+    }
+
+    &-properties {
+      margin-bottom: 30px;
+
+      @include mq('desktop') {
+        margin-bottom: 0;
+      }
+
+      &-body {
+        display: flex;
+        align-items: center;
+
+        .icon-checked {
+          margin-right: 15px;
+        }
+        & + & {
+          margin-top: 10px;
+        }
+      }
+    }
+
+    &-bottom {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+      justify-content: flex-end;
+    }
+
+    &-text {
+      font-size: 1.56em;
+      font-weight: 500;
+      margin-bottom: 20px;
+
+      &-month {
+        color: $color-text-main;
+      }
+    }
+  }
+}
